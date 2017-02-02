@@ -1,6 +1,6 @@
-# opsdroid skill hello
+# opsdroid skill newbuilding
 
-A skill for [opsdroid](https://github.com/opsdroid/opsdroid) to respond to hello and goodbye messages.
+A skill for [opsdroid](https://github.com/opsdroid/opsdroid) to send the livefeed of the new building every Friday or when someone says `new building`.
 
 ## Requirements
 
@@ -12,21 +12,15 @@ None.
 
 ## Usage
 
-#### `hello`
+#### `new building`
 
-Says hello to the user.
+Shows a picture of the new building.
 
-> user: hello
+> user: I drove past the new building this morning
 >
-> opsdroid: Hi user
-
-#### `goodbye`
-
-Says goodbye to the user.
-
-> user: bye
+> opsdroid: Here's an update on the new building.
 >
-> opsdroid: Bye user
+> opsdroid: [photo]
 
 ## License
 
