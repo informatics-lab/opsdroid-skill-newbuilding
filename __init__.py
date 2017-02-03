@@ -1,8 +1,11 @@
-from opsdroid.matchers import match_crontab, match_regex
 import random
 
+from opsdroid.matchers import match_crontab, match_regex
+from opsdroid.message import Message
+
+
 @match_crontab("30 09 * * 5")
-@match_regex(r"new building")
+@match_regex(r".*new building.*")
 async def newbuilding(opsdroid, config, message):
     sentences = [
         "Check out the progress on the new building!",
